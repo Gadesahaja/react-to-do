@@ -1,0 +1,58 @@
+body{
+    background: rgb(107, 65, 147);
+}
+
+.App{
+    text-align: center;
+}
+.App-logo{
+    height: 40vh;
+    pointer-events: none;
+}
+.container{
+    position:relative;
+    max-width: 500px;
+    font-size: 16px;
+    margin: 0 auto;
+    box-shadow: rgba(0,0,0,0.19) 0px 10px 20px, rgba(0,0,0,0.23) 0px 6px 6px;
+    min-height: 300px;
+    padding-top: 20px;
+    border-radius: 15px;
+    background: rgb(78, 129, 173);
+}
+.list{
+    text-align: left;
+}
+.list ul{
+    padding-left: 0;
+}
+
+.list ul li {
+    position: relative; /* Set position to relative for the list item container */
+    background-color:rgb(107, 65, 147);
+    color: white;
+    padding: 5px;
+    margin-bottom: 2px;
+    padding-right: 50px; /* Add padding to accommodate the icons */
+}
+
+.dlt-icon,
+.edit-icon {
+    position: absolute;
+    top: 50%; /* Position the icons vertically centered */
+    transform: translateY(-50%);
+}
+
+.dlt-icon {
+    left: calc(100% - 30px);
+    height: 20px; 
+    margin-right: 5px;/* Position delete icon at the end of the list item */
+}
+
+.edit-icon {
+    left: calc(100% - 60px); /* Position edit icon before the delete icon */
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
